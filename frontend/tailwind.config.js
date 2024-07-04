@@ -9,7 +9,9 @@ export default {
       animation:{
         wiggle: 'wiggle 3s ease-in-out infinite',
         go: 'go 1s ease-in-out infinite',
-        mod: '1s bounce 0.5s infinite'
+        mod: '1s bounce 0.5s infinite',
+        textappear: 'textappear 2s ease-in-out',
+        imageappear: 'imageappear 1s ease-in-out',
       },
       keyframes:{
         wiggle:{
@@ -26,7 +28,18 @@ export default {
           '50%': {
               transform: "none",
           }
+        },
+        textappear:{
+          '0%':{opacity:'0'},
+          '100%':{opacity:'1'}
+        },
+        imageappear:{
+          '0%':{opacity:'1',width:'0px'},
+          '100%':{opacity:'1',width:'50px'},
+
         }
+
+
       }
     },   
     },
