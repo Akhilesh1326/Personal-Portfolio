@@ -7,15 +7,23 @@ import mysql from "../assets/mysql.png";
 import reactjs from "../assets/reactjs.png";
 import express from "../assets/express.png";
 import nodejs from "../assets/node.png";
-import cpp  from "../assets/cpp.png"
-import github from "../assets/github.png"
-import c from "../assets/c.png"
-
+import cpp from "../assets/cpp.png";
+import github from "../assets/github.png";
+import c from "../assets/c.png";
+import certi1 from "../assets/cz.png";
+import certi2 from "../assets/dc.png";
+import certi3 from "../assets/isa.jpg";
 
 const Home = () => {
   const [im, setIm] = useState("");
-  const [fullPara, setFullPara] = useState(false);
-  const [showImg, setShowImg] = useState(true);
+  const [text1, setText1] = useState("");
+  const [text2, setText2] = useState("");
+  const [text3, setText3] = useState("");
+  const [text4, setText4] = useState("");
+
+  const [disableCerti1, setDisableCerti1] = useState(true);
+  const [disableCerti2, setDisableCerti2] = useState(false);
+
   var count = 0;
   useEffect(() => {
     setInterval(() => {
@@ -31,7 +39,59 @@ const Home = () => {
       }
     }, 1000);
   }, []);
+  const c1 = () => {
+    const t = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate facilis id totam nihil quod rerum officia aperiam vero voluptatum, ipsam veritatis. Similique mollitia nisi sequi, sed";
+    let index = 0;
+    var text = "";
+    setInterval(() => {
+      text = text + t[index];
+      index++;
+      if (index >= t.length) {
+        return;
+      }
+      setText1(text);
+    }, 50);
+  };
 
+  const c2 = () => {
+    const t = "Fucking certifcicat to fuck evryon on this planet";
+    let index = 0;
+    var text = "";
+    setInterval(() => {
+      text = text + t[index];
+      index++;
+      if (index >= t.length) {
+        return;
+      }
+      setText2(text);
+    }, 100);
+  };
+  const c3 = () => {
+    const t = "Fucking certifcicat to fuck evryon on this planet";
+    let index = 0;
+    var text = "";
+    setInterval(() => {
+      text = text + t[index];
+      index++;
+      if (index >= t.length) {
+        return;
+      }
+      setText3(text);
+    }, 100);
+  };
+  const c4 = () => {
+    const t = "Fucking certifcicat to fuck evryon on this planet";
+    let index = 0;
+    var text = "";
+    setInterval(() => {
+      text = text + t[index];
+      index++;
+      if (index >= t.length) {
+        return;
+      }
+      setText4(text);
+    }, 100);
+  };
   return (
     <div className="bg-[#2d3250] scroll-smooth">
       <div className="flex flex-col justify-center items-center h-auto pt-10">
@@ -40,7 +100,7 @@ const Home = () => {
           className="sm:w-[25%] w-[30%] lg:w-[15%] my-4"
           alt=""
         />
-        <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#EEAA74] font-bold font-mono mb-4">
+        <p className="text-3xl sm:tesm-4xl md:text-5xl [20rem] text-[#EEAA74] font-bold font-mono mb-4">
           Akhilesh Pimple
         </p>
         <div className="flex flex-col items-center">
@@ -56,7 +116,7 @@ const Home = () => {
             About Me
           </p>
           <div className="h-1 w-[80%] lg:h-2  md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
-          <div className="w-[70%] transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px] py-5 px-5 ">
+          <div className="w-[70%] transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5 ">
             <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-20 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d]">
               Background:
               <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#EEAA74] transition duration-100 group-hover:text-[#ff9d4e]">
@@ -93,61 +153,56 @@ const Home = () => {
             Projects
           </p>
           <div className="h-1 w-[80%] lg:h-2 mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
-          <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px] py-5 px-5">
+          <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5">
             <p className=" text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-20 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] group/p1">
-            <div className="group/ic hover:text-white flex flex-col transition-all duration-300 ease-in-out ">
-              <a
-                href="https://github.com/Akhilesh1326/Blood-Report-Diagnosis."
-                target="_blank"
-              >
-                1.Blood Report Dignosis:
-              
-              <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
-                Hey it's Akhilesh here, I am a student and wanna be a good
-                programmer/developer in good and bright future. I like to read
-                and explore things.
-              </p>
-
-                <img
-                  src={p1i1}
-                  className="w-[0%] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/img:sm:w-[20%] group-hover/p1:lg:w-[40%] "
-                  alt=""
-                />
+              <div className="group/ic hover:text-white flex flex-col transition-all duration-300 ease-in-out ">
+                <a
+                  href="https://github.com/Akhilesh1326/Blood-Report-Diagnosis."
+                  target="_blank"
+                >
+                  1.Blood Report Dignosis:
+                  <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
+                    Hey it's Akhilesh here, I am a student and wanna be a good
+                    programmer/developer in good and bright future. I like to
+                    read and explore things.
+                  </p>
+                  <img
+                    src={p1i1}
+                    className="w-[0%] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/img:sm:w-[20%] group-hover/p1:lg:w-[40%] "
+                    alt=""
+                  />
                 </a>
-            </div>
+              </div>
             </p>
             <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-10 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] group/p2">
-            <div className="group/ic hover:text-white flex flex-col transition-all duration-500 ease-in-out ">
-              <a
-                href="https://github.com/Akhilesh1326/Task-Manager-Using-MERN-Stack"
-                target="_blank"
-              >
-                2.Task Manager:
-              
-              <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
-                B.Tech {"("}Computer Science and Artifical Integlince{")"}
-              </p>
-
-                <img
-                  src={p2i1}
-                  className="w-[0%] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/img:sm:w-[20%] group-hover/p2:lg:w-[40%] "
-                  alt=""
-                />
+              <div className="group/ic hover:text-white flex flex-col transition-all duration-500 ease-in-out ">
+                <a
+                  href="https://github.com/Akhilesh1326/Task-Manager-Using-MERN-Stack"
+                  target="_blank"
+                >
+                  2.Task Manager:
+                  <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
+                    B.Tech {"("}Computer Science and Artifical Integlince{")"}
+                  </p>
+                  <img
+                    src={p2i1}
+                    className="w-[0%] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/img:sm:w-[20%] group-hover/p2:lg:w-[40%] "
+                    alt=""
+                  />
                 </a>
-                </div>
+              </div>
             </p>
             <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-10 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d]">
-            <div className="group/ic hover:text-white flex flex-col transition-all duration-700 ease-in-out ">
-              <a
-                href="https://github.com/Akhilesh1326/Object-Detection-Using-YOLOv8-and-Bard-API"
-                target="_blank"
-              >
-                3.Object Detection and Recognition:
-              
-              <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
-                B.Tech {"("}Computer Science and Artifical Integlince{")"}
-              </p>
-              </a>
+              <div className="group/ic hover:text-white flex flex-col transition-all duration-700 ease-in-out ">
+                <a
+                  href="https://github.com/Akhilesh1326/Object-Detection-Using-YOLOv8-and-Bard-API"
+                  target="_blank"
+                >
+                  3.Object Detection and Recognition:
+                  <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
+                    B.Tech {"("}Computer Science and Artifical Integlince{")"}
+                  </p>
+                </a>
               </div>
             </p>
           </div>
@@ -158,7 +213,7 @@ const Home = () => {
             Skills
           </p>
           <div className="h-1 w-[50%] lg:h-2 md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 "></div>
-          <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px] py-5 px-5">
+          <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5">
             <p className=" text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-10 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] ">
               <div className="group/ic hover:text-white flex flex-row transition-all duration-300 ease-in-out ">
                 1.MERN Stack
@@ -209,23 +264,45 @@ const Home = () => {
                 />
               </div>
             </p>
-            
           </div>
         </div>
-        <div className="flex flex-col items-center group">
+        <div className="flex flex-col items-center group mb-20">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#8f99d1]">
             Skills
           </p>
-          <div className="h-1 w-[50%] lg:h-2 md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 "></div>
-        <div className="grid grid-cols-2">
-          <div className="h-20 w-16 bg-black">
-            <div></div>
-          </div>
-          <div className="h-20 w-16 bg-black">
-            <div></div>
-          </div>
 
-        </div>
+          <div className="h-1 w-[50%] lg:h-2 md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 "></div>
+          <p className="text-slate-400 font-semibold text-lg transition-all duration-300 group-hover:-translate-y-2 group-hover:text-slate-50 my-4">Click on Certificate for more info</p>
+          <div className="transition duration-500 delay-150 shadow-inherit group-hover:shadow-[5px_5px_2px_5px] group-hover:-translate-y-2">
+
+          
+          <div className="flex justify-center content-center">
+            <div className="mx-4 py-2 px-2  my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+            <img src={certi1} alt="" onClick={() => {c1()}} className="w-[20rem] bg-slate-800 "/>
+            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text1}
+            </div>
+            </div>
+
+            <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+            <img src={certi2} alt="" onClick={() => {c2()}} className="w-[20rem] bg-slate-800 "/>
+            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text2}
+            </div>
+            </div>
+          </div>
+          <div className="flex justify-center content-center">
+            <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+            <img src={certi3} alt="" onClick={() => {c3()}} className="w-[20rem] bg-slate-800 "/>
+            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text3}
+            </div>
+            </div>
+
+            <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+            <img src={certi2} alt="" onClick={() => {c4()}} className="w-[20rem] bg-slate-800 "/>
+            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text4}
+            </div>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
       <div></div>
