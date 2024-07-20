@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, React } from "react";
 import proimg from "../assets/male_profile.png";
 import VITlogo from "../assets/vit_logo2.png";
 import p1i1 from "../assets/p1i1.png";
@@ -20,9 +20,6 @@ const Home = () => {
   const [text2, setText2] = useState("");
   const [text3, setText3] = useState("");
   const [text4, setText4] = useState("");
-
-  const [disableCerti1, setDisableCerti1] = useState(true);
-  const [disableCerti2, setDisableCerti2] = useState(false);
 
   var count = 0;
   useEffect(() => {
@@ -91,9 +88,9 @@ const Home = () => {
       }
       setText4(text);
     }, 100);
-  };
+  }; 
   return (
-    <div className="bg-[#2d3250] scroll-smooth">
+    <div className="bg-[#2d3250] bg-gradient-to-r from-[#121e5e] via-#2b0080-100 to-[#354dd2] scroll-smooth">
       <div className="flex flex-col justify-center items-center h-auto pt-10">
         <img
           src={proimg}
@@ -105,27 +102,27 @@ const Home = () => {
         </p>
         <div className="flex flex-col items-center">
           <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl text-[#ffff] font-semibold font-mono transition-opacity">
-            I'm a
+            I{"'"}m a
           </p>
           <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl text-[#EEAA74] font-semibold font-mono transition-opacity animate-mod my-2 mb-[10rem] lg:mb-[18rem]">
             {im}
           </p>
         </div>
         <div className="flex flex-col items-center group mb-20">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#8f99d1]">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#ffffff]">
             About Me
           </p>
           <div className="h-1 w-[80%] lg:h-2  md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
           <div className="w-[70%] transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5 ">
-            <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-20 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d]">
+            <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-20 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#ffff]">
               Background:
               <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#EEAA74] transition duration-100 group-hover:text-[#ff9d4e]">
-                Hey it's Akhilesh here, I am a student and wanna be a good
+                Hey it{"'"}s Akhilesh here, I am a student and wanna be a good
                 programmer/developer in good and bright future. I like to read
                 and explore things.
               </p>
             </p>
-            <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-10 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] group/img">
+            <p className="text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-10 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#ffff] group/img">
               Education:
               <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#EEAA74] transition duration-100 group-hover:text-[#ff9d4e]">
                 B.Tech {"("}Computer Science and Artifical Integlince{")"}
@@ -149,7 +146,7 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col items-center group">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#8f99d1]">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
             Projects
           </p>
           <div className="h-1 w-[80%] lg:h-2 mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
@@ -162,7 +159,7 @@ const Home = () => {
                 >
                   1.Blood Report Dignosis:
                   <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
-                    Hey it's Akhilesh here, I am a student and wanna be a good
+                    Hey it{"'"}s Akhilesh here, I am a student and wanna be a good
                     programmer/developer in good and bright future. I like to
                     read and explore things.
                   </p>
@@ -209,7 +206,7 @@ const Home = () => {
         </div>
 
         <div className="flex flex-col items-center group">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#8f99d1]">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
             Skills
           </p>
           <div className="h-1 w-[50%] lg:h-2 md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 "></div>
@@ -267,11 +264,11 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col items-center group mb-20">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#8f99d1]">
-            Skills
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
+            Certificates
           </p>
 
-          <div className="h-1 w-[50%] lg:h-2 md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 "></div>
+          <div className="h-1 w-[70%] lg:h-2 md mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 "></div>
           <p className="text-slate-400 font-semibold text-lg transition-all duration-300 group-hover:-translate-y-2 group-hover:text-slate-50 my-4">Click on Certificate for more info</p>
           <div className="transition duration-500 delay-150 shadow-inherit group-hover:shadow-[5px_5px_2px_5px] group-hover:-translate-y-2">
 
