@@ -1,12 +1,8 @@
-import { useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import proimg from "../assets/male_profile.png";
 import VITlogo from "../assets/vit_logo2.png";
 import p1i1 from "../assets/p1i1.png";
 import p2i1 from "../assets/p2i1.png";
-import mysql from "../assets/mysql.png";
-import reactjs from "../assets/reactjs.png";
-import express from "../assets/express.png";
-import nodejs from "../assets/node.png";
 import cpp from "../assets/cpp.png";
 import github from "../assets/github.png";
 import c from "../assets/c.png";
@@ -14,6 +10,9 @@ import certi1 from "../assets/cz.png";
 import certi2 from "../assets/dc.png";
 import certi3 from "../assets/isa.jpg";
 import mern from "../assets/MERN-logo.png"
+import call from "../assets/call.png"
+import mail from "../assets/mail.png"
+
 
 const Home = () => {
   const [im, setIm] = useState("");
@@ -21,17 +20,10 @@ const Home = () => {
   const [text2, setText2] = useState("");
   const [text3, setText3] = useState("");
   const [text4, setText4] = useState("");
-  const [color, setColor] = useState('#263798');
+  // const [color, setColor] = useState('#263798');
 
-  const getPoint = (e) =>{
-    let x = e.pageX;
-    let y = e.pageY;
-    console.log("X= ",e.pageX)
-    console.log("Y= ",e.pageY)
-    if(x == 300, y == 300){
-      setColor('#299bcd')
-    }
-  }
+
+
 
   var count = 0;
   useEffect(() => {
@@ -100,10 +92,11 @@ const Home = () => {
       }
       setText4(text);
     }, 100);
-  }; 
+  };
+
+
   return (
-    <div className="scroll-smooth" onMouseMove={getPoint}
-    style={{ backgroundColor: color }}>
+    <div className="scroll-smooth bg-[#263798]">
       <div className="flex flex-col justify-center items-center h-auto pt-10">
         <img
           src={proimg}
@@ -121,7 +114,7 @@ const Home = () => {
             {im}
           </p>
         </div>
-        
+
         <div className="flex flex-col items-center group  bg-gradient-to-b from-[#263798] from-10% via-#1B2632-100 via-50% to-[#0D1925] to-40%">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#ffffff]">
             About Me
@@ -159,7 +152,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center group bg-gradient-to-b from-[#0D1925] via-#1B2632 to-[#1B2632]">
+        <div className="flex flex-col items-center group bg-gradient-to-b pt-10 from-[#0D1925] via-#1B2632 to-[#1B2632]">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
             Projects
           </p>
@@ -219,7 +212,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center group bg-gradient-to-b from-[#1B2632] via-#364252-100 to-[#0D1925]">
+        <div className="flex flex-col items-center group bg-gradient-to-b w-full from-[#1B2632] via-#364252-100 to-[#0D1925]">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
             Skills
           </p>
@@ -236,7 +229,7 @@ const Home = () => {
             </p>
             <p className=" text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-10 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] ">
               <div className="group/ic hover:text-white flex flex-row transition-all duration-500 ease-in-out ">
-                2.C/C++
+                C/C++
                 <img
                   src={cpp}
                   className="sm:w-[25%] w-[30%] lg:w-[4%] mx-2 opacity-50 group-hover/ic:translate-x-2  group-hover:opacity-100 duration-300"
@@ -251,7 +244,7 @@ const Home = () => {
             </p>
             <p className=" text-xl sm:text-1xl md:text-2xl lg:text-3xl mb-10 text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] ">
               <div className="group/ic hover:text-white flex flex-row transition-all duration-700 ease-in-out ">
-                3.Git/GitHub
+                Version Controlling
                 <img
                   src={github}
                   className="sm:w-[25%] w-[30%] lg:w-[4%] mx-2 opacity-50 group-hover/ic:translate-x-2  group-hover:opacity-100 duration-300"
@@ -270,33 +263,60 @@ const Home = () => {
           <p className="text-slate-400 font-semibold text-lg transition-all duration-300 group-hover:-translate-y-2 group-hover:text-slate-50 my-4">Click on Certificate for more info</p>
           <div className="transition duration-500 delay-150 shadow-inherit group-hover:shadow-[5px_5px_2px_5px] group-hover:-translate-y-2">
 
-          
-          <div className="flex justify-center content-center">
-            <div className="mx-4 py-2 px-2  my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
-            <img src={certi1} alt="" onClick={() => {c1()}} className="w-[20rem] bg-slate-800 "/>
-            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text1}
-            </div>
-            </div>
 
-            <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
-            <img src={certi2} alt="" onClick={() => {c2()}} className="w-[20rem] bg-slate-800 "/>
-            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text2}
+            <div className="flex justify-center content-center">
+              <div className="mx-4 py-2 px-2  my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+                <img src={certi1} alt="" onClick={() => { c1() }} className="w-[20rem] bg-slate-800 " />
+                <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text1}
+                </div>
+              </div>
+
+              <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+                <img src={certi2} alt="" onClick={() => { c2() }} className="w-[20rem] bg-slate-800 " />
+                <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text2}
+                </div>
+              </div>
             </div>
+            <div className="flex justify-center content-center">
+              <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+                <img src={certi3} alt="" onClick={() => { c3() }} className="w-[20rem] bg-slate-800 " />
+                <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text3}
+                </div>
+              </div>
+
+              <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
+                <img src={certi2} alt="" onClick={() => { c4() }} className="w-[20rem] bg-slate-800 " />
+                <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text4}
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex justify-center content-center">
-            <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
-            <img src={certi3} alt="" onClick={() => {c3()}} className="w-[20rem] bg-slate-800 "/>
-            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text3}
-            </div>
-            </div>
+        </div>
 
-            <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
-            <img src={certi2} alt="" onClick={() => {c4()}} className="w-[20rem] bg-slate-800 "/>
-            <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text4}
-            </div>
-            </div>
-          </div>
+        <div className="flex flex-col items-center group bg-gradient-to-b pt-10 w-full from-[#364252] via-#1B2632 to-[#1B2632]">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
+            Contact Me
+          </p>
+          <div className="h-1 w-[80%] lg:h-2 mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
+          <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5">
+            <p className=" text-xl sm:text-1xl md:text-2xl lg:text-3xl  text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] group/p1">
+            <div className="group/call">
+                <div className=" hover:text-white flex flex-row transition-all duration-300 ease-in-out ">
+                <img src={call} alt="" className="w-8 h-8 mx-4 " />Phone:-
+              </div>
+              <div className="text-[20px] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/call:sm:text-[10px] group-hover/call:lg:text-[30px]  group-hover/call:text-white mb-5"
+                alt="">+91 8626059005
+              </div>
+              </div>
+            <div className="group/call">
+                <div className=" hover:text-white flex flex-row transition-all duration-300 ease-in-out ">
+                <img src={mail} alt="" className="w-8 h-8 mx-4 " />Phone:-
+              </div>
+              <div className="text-[20px] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/call:sm:text-[10px] group-hover/call:lg:text-[30px]  group-hover/call:text-white mb-5"
+                alt="">akhileshpimple3@gmail.com
+              </div>
+              </div>
+            </p>
           </div>
         </div>
       </div>
