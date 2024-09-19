@@ -6,12 +6,15 @@ import p2i1 from "../assets/p2i1.png";
 import cpp from "../assets/cpp.png";
 import github from "../assets/github.png";
 import c from "../assets/c.png";
-import certi1 from "../assets/cz.png";
+// import certi1 from "../assets/cz.png";
 import certi2 from "../assets/dc.png";
 import certi3 from "../assets/isa.jpg";
 import mern from "../assets/MERN-logo.png"
 import call from "../assets/call.png"
 import mail from "../assets/mail.png"
+import BB from "../assets/BB.png"
+import ISIH from "../assets/ISIH.png"
+import myself from "../assets/myself.png"
 
 
 const Home = () => {
@@ -99,7 +102,7 @@ const Home = () => {
     <div className="scroll-smooth bg-[#263798]">
       <div className="flex flex-col justify-center items-center h-auto pt-10">
         <img
-          src={proimg}
+          src={myself}
           className="sm:w-[25%] w-[30%] lg:w-[15%] my-4"
           alt=""
         />
@@ -266,13 +269,13 @@ const Home = () => {
 
             <div className="flex justify-center content-center">
               <div className="mx-4 py-2 px-2  my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
-                <img src={certi1} alt="" onClick={() => { c1() }} className="w-[20rem] bg-slate-800 " />
+                <img src={BB} alt="" onClick={() => { c1() }} className="w-[20rem] bg-slate-800 " />
                 <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text1}
                 </div>
               </div>
 
               <div className="mx-4 py-2 px-2 my-2 transition-all duration-500 hover:-translate-y-2 hover:shadow-md hover:shadow-slate-300">
-                <img src={certi2} alt="" onClick={() => { c2() }} className="w-[20rem] bg-slate-800 " />
+                <img src={ISIH} alt="" onClick={() => { c2() }} className="w-[20rem] bg-slate-800 " />
                 <div className="text-md text-justify font-bold max-w-[20rem] font-mono my-2 text-[#EEAA74]">{text2}
                 </div>
               </div>
