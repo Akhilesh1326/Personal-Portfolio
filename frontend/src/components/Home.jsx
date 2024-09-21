@@ -322,6 +322,32 @@ const Home = () => {
             </p>
           </div>
         </div>
+        <div className="flex flex-col items-center group bg-gradient-to-b pt-10 w-full from-[#364252] via-#1B2632 to-[#1B2632]">
+          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
+            Contact Me
+          </p>
+          <div className="h-1 w-[80%] lg:h-2 mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
+          <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5">
+            <p className=" text-xl sm:text-1xl md:text-2xl lg:text-3xl  text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] group/p1">
+            <div className="group/call">
+                <div className=" hover:text-white flex flex-row transition-all duration-300 ease-in-out ">
+                <img src={call} alt="" className="w-8 h-8 mx-4 " />Phone:-
+              </div>
+              <div className="text-[20px] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/call:sm:text-[10px] group-hover/call:lg:text-[30px]  group-hover/call:text-white mb-5"
+                alt="">+91 8626059005
+              </div>
+              </div>
+            <div className="group/call">
+                <div className=" hover:text-white flex flex-row transition-all duration-300 ease-in-out ">
+                <img src={mail} alt="" className="w-8 h-8 mx-4 " />Phone:-
+              </div>
+              <div className="text-[20px] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/call:sm:text-[10px] group-hover/call:lg:text-[30px]  group-hover/call:text-white mb-5"
+                alt="">akhileshpimple3@gmail.com
+              </div>
+              </div>
+            </p>
+          </div>
+        </div>
       </div>
       <div></div>
     </div>
