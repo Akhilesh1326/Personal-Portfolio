@@ -324,7 +324,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col items-center group bg-gradient-to-b pt-10 w-full from-[#364252] via-#1B2632 to-[#1B2632]">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
-            Contact Me
+            Just for github
           </p>
           <div className="h-1 w-[80%] lg:h-2 mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
           <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5">
