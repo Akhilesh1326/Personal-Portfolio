@@ -40,6 +40,11 @@ export default {
         }
 
 
+      },
+      fontFamily:{
+        Roboto: ['Roboto'],
+        Poppins: ['Poppins'],
+        Pacifico: ['Pacifico'],
       }
     },   
     },
