@@ -187,9 +187,9 @@ const Home = () => {
                   href="https://github.com/Akhilesh1326/Task-Manager-Using-MERN-Stack"
                   target="_blank"
                 >
-                  2.Task Manager:
+                  2.Clinic Management System-Medlinea:
                   <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
-                    B.Tech {"("}Computer Science and Artifical Integlince{")"}
+                    MERN-Stack based web-application for patients and doctors to managmen nearly everything about medical related.
                   </p>
                   <img
                     src={p2i1}
@@ -207,7 +207,7 @@ const Home = () => {
                 >
                   3.Object Detection and Recognition:
                   <p className="mt-5 text-lg sm:text-xl md:text-1xl lg:text-2xl ml-10 text-[#8a5931] transition duration-100 group-hover:text-[#ff9d4e] group-hover/ic:text-[#c78f3b]">
-                    B.Tech {"("}Computer Science and Artifical Integlince{")"}
+                    Recognizing an object from camera and providing introductory information about the object. Put use of AI and LLM 
                   </p>
                 </a>
               </div>
@@ -299,32 +299,6 @@ const Home = () => {
         <div className="flex flex-col items-center group bg-gradient-to-b pt-10 w-full from-[#364252] via-#1B2632 to-[#1B2632]">
           <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
             Contact Me
-          </p>
-          <div className="h-1 w-[80%] lg:h-2 mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
-          <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5">
-            <p className=" text-xl sm:text-1xl md:text-2xl lg:text-3xl  text-[#424679] font-semibold font-mono transition ease-in-out duration-300 group-hover:-translate-y-2 group-hover:text-[#676f9d] group/p1">
-            <div className="group/call">
-                <div className=" hover:text-white flex flex-row transition-all duration-300 ease-in-out ">
-                <img src={call} alt="" className="w-8 h-8 mx-4 " />Phone:-
-              </div>
-              <div className="text-[20px] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/call:sm:text-[10px] group-hover/call:lg:text-[30px]  group-hover/call:text-white mb-5"
-                alt="">+91 8626059005
-              </div>
-              </div>
-            <div className="group/call">
-                <div className=" hover:text-white flex flex-row transition-all duration-300 ease-in-out ">
-                <img src={mail} alt="" className="w-8 h-8 mx-4 " />Phone:-
-              </div>
-              <div className="text-[20px] my-2 ml-10 transition-all ease-in-out duration-500  group-hover/call:sm:text-[10px] group-hover/call:lg:text-[30px]  group-hover/call:text-white mb-5"
-                alt="">akhileshpimple3@gmail.com
-              </div>
-              </div>
-            </p>
-          </div>
-        </div>
-        <div className="flex flex-col items-center group bg-gradient-to-b pt-10 w-full from-[#364252] via-#1B2632 to-[#1B2632]">
-          <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 text-[#676f9d] font-semibold font-mono  transition ease-in-out duration-300 group-hover:-translate-y-3 group-hover:text-[#c2c8e9]">
-            Just for github
           </p>
           <div className="h-1 w-[80%] lg:h-2 mb-5 bg-white rounded-full font-mono transition ease-in-out duration-300 group-hover:-translate-y-2"></div>
           <div className="w-[70%] mb-20 transition duration-500 delay-150 shadow-inherit  group-hover:shadow-[10px_10px_5px_10px]  group-hover:-translate-y-2  py-5 px-5">
