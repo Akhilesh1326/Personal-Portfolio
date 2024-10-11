@@ -2,10 +2,17 @@
   "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://akhilesh1326.github.io/Personal-Portfolio",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
+
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
 }
