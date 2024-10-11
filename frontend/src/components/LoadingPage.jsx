@@ -15,6 +15,7 @@ const LoadingPage = () => {
                 <h2 className="text-xl font-semibold text-gray-700 animate-spin">/</h2>
                 <h2 className="text-xl font-semibold text-gray-700 animate-spin">/</h2>
                 <h2 className="text-xl font-semibold text-gray-700 animate-spin">/</h2>
+                <h2 className="text-xl font-semibold text-gray-700 animate-spin">/</h2>
             </div>
         </div>
     );
