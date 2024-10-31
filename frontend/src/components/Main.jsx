@@ -3,8 +3,8 @@ import myself from "../assets/myself.png"
 
 const Main = () => {
   return (
-    <div className='bg-[#1F1F38] '>
-      <div className='flex justify-center items-center'>
+    <div className=' '>
+      <div className='flex justify-center items-center bg-[#1F1F38] h-screen'>
 
 
         <div className='flex flex-col justify-center items-center  w-[1000px] ml-10'  >
@@ -33,21 +33,21 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center'>
+      <div className='flex flex-col justify-center items-center bg-[#00ADB5]'>
         <h2 className='text-[#F5F5F7] text-[30px] font-medium font-Poppins mt-40'>Project Listing</h2>
-        <div className='flex justify-center items-center'>
-          <div className='w-20'>
+        <div className='flex justify-end'>
+          <div className='w-40'>
             <div>medlinia</div>
             <div >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam!</div>
           </div>
 
-          <div className='w-4 h-[450px] bg-white rounded-full  mx-10 shadow-[0px_0px_15px_1px_#EDEDED] '>
+          <div className='w-1 h-[450px] bg-white rounded-full  shadow-[0px_0px_15px_1px_#EDEDED] '> </div>
 
-            <div className='w-20 ml-10'>
+            <div className='w-40'>
               <div>medlinia</div>
               <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam!</div>
             </div>
-          </div>
+         
 
         </div>
         <div>
