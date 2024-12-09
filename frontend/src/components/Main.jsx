@@ -131,34 +131,35 @@ const Main = () => {
         {/* </div> */}
 
       </div>
-      <div className="bg-gradient-to-b from-[#353552] via-[#353552] to-[#1A2238] py-16">
+      <div className="bg-gradient-to-b from-[#353552] via-[#353552] to-[#1A2238] pt-16 pb-36">
         <h2 className="text-[#F5F5F7] text-[30px] font-medium font-Poppins text-center mb-10">
           Skill Set
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-10">
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 px-10">
+
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg hover:shadow-[0px_0px_15px_5px_#61DAFB] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS Logo" className="w-16 h-16 mb-3" aria-label="ReactJS" />
             <h3 className="text-[#F5F5F7] text-lg font-semibold">ReactJS</h3>
           </div>
 
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#ffff] shadow-lg hover:scale-105  duration-200">
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="ReactJS Logo" className="w-16 h-16 mb-3" aria-label="ReactJS" />
             <h3 className="text-[#F5F5F7] text-lg font-semibold">NextJS</h3>
           </div>
 
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#57A745] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" className="w-16 h-16 mb-3" aria-label="Node.js" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">NodeJS</h3>
           </div>
 
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#ffff] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express.js Logo" className="w-16 h-16 mb-3" aria-label="Express.js" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">Express</h3>
           </div>
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#06B6D4] shadow-lg hover:scale-105  duration-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 122.88 73.29"
@@ -176,44 +177,44 @@ const Main = () => {
             <h3 className="text-[#F5F5F7] text-lg font-semibold">Tailwind CSS</h3>
           </div>
 
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#00618A] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL Logo" className="w-16 h-16 mb-3" aria-label="MySQL" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">MySQL</h3>
           </div>
 
-          <div className="flex flex-col items-center  bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center  bg-[#27293D] p-2 rounded-lg hover:shadow-[0px_0px_15px_5px_#45A538] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo" className="w-16 h-16 mb-3" aria-label="MongoDB" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">MognoDB</h3>
           </div>
 
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#F0DB4F] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" className="w-16 h-16 mb-3" aria-label="JavaScript" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">JavaScript</h3>
           </div>
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#659AD2] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++ Logo" className="w-16 h-16 mb-3" aria-label="C++" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">C++</h3>
           </div>
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#0074BD] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" className="w-16 h-16 mb-3" aria-label="Java" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">Java</h3>
           </div>
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#77BC1F] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Boot Logo" className="w-16 h-16 mb-3" aria-label="Spring Boot" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">SpringBoot</h3>
           </div>
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#F5D44B] shadow-lg hover:scale-105  duration-200">
             <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI Logo" className="w-16 h-16 mb-3" aria-label="Power BI" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">PowerBI</h3>
           </div>
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg  hover:shadow-[0px_0px_15px_5px_#3B78A8] shadow-lg hover:scale-105  duration-200">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" className="w-16 h-16 mb-3" aria-label="Python" />
 
             <h3 className="text-[#F5F5F7] text-lg font-semibold">PYthon</h3>
