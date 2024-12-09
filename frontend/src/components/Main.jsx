@@ -1,5 +1,8 @@
 import React from 'react'
 import myself from "../assets/myself.png"
+import laptopMockup from "../assets/laptop_mockup.webp"
+import MedlineaFI from "../assets/MedlineaFI.png"
+
 
 const Main = () => {
   return (
@@ -33,44 +36,138 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-center items-center bg-[#00ADB5]'>
-        <h2 className='text-[#F5F5F7] text-[30px] font-medium font-Poppins mt-40'>Project Listing</h2>
-        <div className='flex justify-end'>
-          <div className='w-40'>
-            <div>medlinia</div>
-            <div >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam!</div>
+      <div className="flex flex-col justify-center items-center bg-[#00ADB5] min-h-screen">
+        <h2 className="text-[#F5F5F7] text-[30px] font-medium font-Poppins mt-10">
+          Project Listing
+        </h2>
+        <div className="flex  justify-center items-center  mt-20">
+          {/* Left Section */}
+          <div className="flex flex-col items-center w-80 ">
+
+            <div className="text-white text-center font-semibold mb-1">Medlinia</div>
+            <div className="relative w-full">
+              <img src={laptopMockup} alt="Medlinia mockup" className="w-[450px] h-[180px]" />
+
+              {/* Project Image inside Mockup */}
+              <img
+                src={MedlineaFI}
+                alt="Project screenshot"
+                className="absolute top-[8%] left-[10%] w-[80%] h-[80%] size-0 object-cover"
+              />
+            </div>
+            {/* <img src={laptopMockup} alt="Medlinia mockup" className="w-full" /> */}
+
+            <div className="text-white text-lg  text-center w-96 mt-1 ">
+              A Web App for connecting doctors and patients with integration of AI functionalities
+            </div>
           </div>
 
-          <div className='w-1 h-[450px] bg-white rounded-full  shadow-[0px_0px_15px_1px_#EDEDED] '> </div>
 
-            <div className='w-40'>
-              <div>medlinia</div>
-              <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam!</div>
+          <div className="w-2  h-[250px] ml-60 bg-white rounded-full shadow-[0px_0px_15px_1px_#EDEDED]"></div>
+        </div>
+
+        <div className="flex  justify-center items-center  mt-40">
+
+          <div className="w-2 h-[250px] mr-60 bg-white rounded-full shadow-[0px_0px_15px_1px_#ededed]"></div>
+
+          <div className="flex flex-col items-center w-72 ">
+            <div className="text-white text-center font-semibold mb-1">GLOF Alert-System</div>
+            <img
+              src={laptopMockup}
+              alt="Medlinia mockup"
+              className="w-full h-auto "
+            />
+            <div className="text-white text-lg  text-center w-96 mt-1">
+              Website based on the predicting and alerting about the glacial lake outburst and floodS
             </div>
-         
+            <img src="" alt="" />
+          </div>
 
         </div>
-        <div>
-          <div>medlinia</div>
-          <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam!</div>
-          <div>medlinia</div>
-          <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quibusdam!</div>
+        <div className="flex  justify-center items-center  mt-20">
+          {/* Left Section */}
+          <div className="flex flex-col items-center w-80 ">
+
+            <div className="text-white text-center font-semibold mb-1">Medlinia</div>
+            <div className="relative w-full">
+              <img src={laptopMockup} alt="Medlinia mockup" className="w-[450px] h-[180px]" />
+
+              {/* Project Image inside Mockup */}
+              <img
+                src={MedlineaFI}
+                alt="Project screenshot"
+                className="absolute top-[8%] left-[10%] w-[80%] h-[80%] size-0 object-cover"
+              />
+            </div>
+            {/* <img src={laptopMockup} alt="Medlinia mockup" className="w-full" /> */}
+
+            <div className="text-white text-lg  text-center w-96 mt-1 ">
+              A Web App for connecting doctors and patients with integration of AI functionalities
+            </div>
+          </div>
+
+
+          <div className="w-2  h-[250px] ml-60 bg-white rounded-full shadow-[0px_0px_15px_1px_#EDEDED]"></div>
+        </div>
+
+        <div className="flex  justify-center items-center  mt-40">
+
+          <div className="w-2 h-[250px] mr-60 bg-white rounded-full shadow-[0px_0px_15px_1px_#ededed]"></div>
+
+          <div className="flex flex-col items-center w-72 ">
+            <div className="text-white text-center font-semibold mb-1">GLOF Alert-System</div>
+            <img
+              src={laptopMockup}
+              alt="Medlinia mockup"
+              className="w-full h-auto "
+            />
+            <div className="text-white text-lg  text-center w-96 mt-1">
+              Website based on the predicting and alerting about the glacial lake outburst and floodS
+            </div>
+            <img src="" alt="" />
+          </div>
+
+        </div>
+        {/* </div> */}
+
+      </div>
+      <div className="bg-gradient-to-b from-[#353552] via-[#353552] to-[#1A2238] py-16">
+        <h2 className="text-[#F5F5F7] text-[30px] font-medium font-Poppins text-center mb-10">
+          Skill Set
+        </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-10">
+            <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS Logo" className="w-16 h-16 mb-3" aria-label="ReactJS" />
+              <h3 className="text-[#F5F5F7] text-lg font-semibold">ReactJS</h3>
+            </div>
+          </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-10">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" alt="ReactJS Logo" className="w-16 h-16 mb-3" aria-label="ReactJS" />
+            <h3 className="text-[#F5F5F7] text-lg font-semibold">ReactJS</h3>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-10">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Logo" className="w-16 h-16 mb-3" aria-label="Node.js" />
+
+            <h3 className="text-[#F5F5F7] text-lg font-semibold">ReactJS</h3>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 px-10">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg shadow-lg hover:scale-105 hover:shadow-xl transition-transform">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="Express.js Logo" className="w-16 h-16 mb-3" aria-label="Express.js" />
+
+            {/* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS Logo" className="w-16 h-16 mb-3" aria-label="ReactJS" /> */}
+            <h3 className="text-[#F5F5F7] text-lg font-semibold">ReactJS</h3>
+          </div>
         </div>
       </div>
-      <div>
-        <div>Skills Set</div>
-        <div>reactjs</div>
-        <div>nextjs</div>
-        <div>react native</div>
-        <div>nodejs</div>
-        <div>expressjs</div>
-        <div>mysql</div>
-        <div>mongodb</div>
-        <div>tailwindCss</div>
-        <div>c/c++</div>
-        <div>python</div>
-        <div>DSA</div>
-      </div>
+
       <div>
         <div>TestiMonials</div>
         <div>
