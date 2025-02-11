@@ -1,10 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import myself from "../assets/myself.png"
 import laptopMockup from "../assets/laptop_mockup.webp"
 import MedlineaFI from "../assets/MedlineaFI.png"
+import rightArrow from "../assets/rightArrow.png"
+import leftArrow from "../assets/leftArrow.png"
 
 
 const Main = () => {
+
+  const [currentTM, setCurrentTM] = useState(0);
+  const [prev, setPrev] = useState(0);
+
+  const testimonials = [
+    {
+      text: "This is the best service I've ever used. The team is professional, and the quality is unmatched!",
+      name: "John Doe",
+      role: "CEO, Company XYZ",
+      image: "https://via.placeholder.com/50",
+    },
+    {
+      text: "Fantastic experience! Highly recommended for anyone looking for great service.",
+      name: "Jane Smith",
+      role: "CTO, Startup Inc.",
+      image: "https://via.placeholder.com/50",
+    },
+    {
+      text: "Absolutely amazing! Everything was delivered on time with perfect quality.",
+      name: "Alice Brown",
+      role: "Manager, Tech Corp",
+      image: "https://via.placeholder.com/50",
+    },
+  ];
+
+  const nextTestimonial = () => {
+    setCurrentTM((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTM(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    );
+  };
   return (
     <div className=' '>
       <div className='flex justify-center items-center bg-[#1F1F38] h-screen'>
@@ -138,7 +174,7 @@ const Main = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 px-10">
 
-          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg hover:shadow-[0px_0px_15px_5px_#61DAFB] shadow-lg hover:scale-105  duration-200">
+          <div className="flex flex-col items-center bg-[#27293D] p-2 rounded-lg hover:shadow-[0px_0px_15px_5px_#61DAFB] shadow-lg hover:scale-105  duration-200 ">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS Logo" className="w-16 h-16 mb-3" aria-label="ReactJS" />
             <h3 className="text-[#F5F5F7] text-lg font-semibold">ReactJS</h3>
           </div>
@@ -222,6 +258,56 @@ const Main = () => {
 
         </div>
       </div>
+      <div className="flex flex-col justify-center items-center bg-gradient-to-r from-[#1F1F38] to-[#27293D] py-16">
+        <h2 className="text-[30px] text-center text-[#F5F5F7] font-medium font-Poppins mb-8">
+          What People Say About Us
+        </h2>
+        <div className="flex w-[25rem] overflow-x-auto snap-x snap-mandatory">
+  {/* Testimonial Card 1 */}
+  <div className="w-80 flex-shrink-0 snap-center">
+    <div className="bg-[#1B1F35] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+      <div className="text-[#F5F5F7] text-xl italic mb-4">
+        "This is the best service I've ever used. The team is professional, and the quality is unmatched!"
+      </div>
+      <div className="flex items-center mt-4">
+        <img
+          src="https://via.placeholder.com/50"
+          alt="Reviewer"
+          className="w-12 h-12 rounded-full mr-4"
+        />
+        <div>
+          <h3 className="text-[#F5F5F7] font-bold">John Doe</h3>
+          <p className="text-gray-400 text-sm">CEO, Company XYZ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Testimonial Card 2 */}
+  <div className="w-80 flex-shrink-0 snap-center">
+    <div className="bg-[#1B1F35] p-6 rounded-lg shadow-lg hover:shadow-xl transition-all">
+      <div className="text-[#F5F5F7] text-xl italic mb-4">
+        "Fantastic experience! Highly recommended for anyone looking for great service."
+      </div>
+      <div className="flex items-center mt-4">
+        <img
+          src="https://via.placeholder.com/50"
+          alt="Reviewer"
+          className="w-12 h-12 rounded-full mr-4"
+        />
+        <div>
+          <h3 className="text-[#F5F5F7] font-bold">Jane Smith</h3>
+          <p className="text-gray-400 text-sm">CTO, Startup Inc.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Add more cards as needed */}
+</div>
+
+      </div>
+
 
       <div>
         <div>TestiMonials</div>
